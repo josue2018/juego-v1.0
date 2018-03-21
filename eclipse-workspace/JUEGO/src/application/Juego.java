@@ -29,26 +29,11 @@ public class Juego {
 		mostrarFondo.setImage(fondo);
 		mostrarFondo.setFitWidth(500);
 		mostrarFondo.setFitHeight(500);
-		
 		root.getChildren().addAll(mostrarFondo);
 		Stage2.setScene(scene); 
 		Stage2.show();
-		Button botonVolver=new Button("<-BACK");
-		botonVolver.setLayoutX(250);
-		botonVolver.setLayoutY(280);
-		botonVolver.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() 
-		{
 
-			@Override
-			public void handle(MouseEvent arg0) {
-				
-				Main volver=new Main();
-				volver.start(Stage2);
-			}
-			
-		});root.getChildren().addAll(botonVolver);
 		for(int i=0;i<=5;i++) {
-			
 		Aleatorio ale=new Aleatorio();
 		double x=ale.PosicionX();
 		double y=ale.PosicionY();
