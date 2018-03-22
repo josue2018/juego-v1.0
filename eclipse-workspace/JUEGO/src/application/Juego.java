@@ -32,8 +32,31 @@ public class Juego {
 		root.getChildren().addAll(mostrarFondo);
 		Stage2.setScene(scene); 
 		Stage2.show();
-
-		for(int i=0;i<=5;i++) {
+		
+		for(int i=0;i<=4;i++) {
+			Aleatorio ale=new Aleatorio();
+			double x=ale.PosicionX();
+			double y=ale.PosicionY();
+			
+			Image obstaculo2=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/obs1.jpg");
+			ImageView mostrarObstaculo2=new ImageView();
+			mostrarObstaculo2.setImage(obstaculo2);
+			mostrarObstaculo2.setLayoutX(x);
+			mostrarObstaculo2.setLayoutY(y);
+			
+			TranslateTransition a=new TranslateTransition();
+			a.setDuration(Duration.millis(9000));
+			a.setNode(mostrarObstaculo2);
+			a.setByX(0);
+			a.setByY(500);
+			a.setCycleCount(10);
+			a.setAutoReverse(false);
+			a.play();
+			
+			root.getChildren().addAll(mostrarObstaculo2);
+			}
+		
+		for(int i=0;i<=4;i++) {
 		Aleatorio ale=new Aleatorio();
 		double x=ale.PosicionX();
 		double y=ale.PosicionY();
@@ -45,10 +68,10 @@ public class Juego {
 		mostrarObstaculo.setLayoutY(y);
 		
 		TranslateTransition a=new TranslateTransition();
-		a.setDuration(Duration.millis(2700));
+		a.setDuration(Duration.millis(5000));
 		a.setNode(mostrarObstaculo);
-		a.setByX(-10);
-		a.setByY(1500);
+		a.setByX(0);
+		a.setByY(500);
 		a.setCycleCount(10);
 		a.setAutoReverse(false);
 		a.play();
@@ -61,7 +84,6 @@ public class Juego {
 		mostrarJugador.setImage(jugador);
 		mostrarJugador.setLayoutX(mx);
 		mostrarJugador.setLayoutY(my);
-		
 		
 		scene.setOnKeyPressed(new EventHandler<KeyEvent>() 
 		{
@@ -83,16 +105,24 @@ public class Juego {
                 if(ke.getCode()== KeyCode.DOWN) {
                 	my=my+10;
                 	mostrarJugador.setTranslateY(my);
-                }	
-			} 
+                }
+                if(mx>500||mx<0) {
+                	
+                	System.out.println("LIMITE"+mx);
+    				//Colision lose=new Colision();
+    				//lose.Perdiste(Stage2);
+    			}
+                
+			}
+			
 			
 		});root.getChildren().addAll(mostrarJugador);
 		
 		
-		if(mx<10||mx>490) {
+		/*if(mx<10||mx>490) {
 			Colision borde=new Colision();
 			borde.Perdiste(Stage2);	
-		}
+		}*/
 	}
 
 }

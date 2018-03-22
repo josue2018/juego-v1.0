@@ -27,8 +27,8 @@ public class Colision {
 		Image perdiste=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/GAME%20OVER.jpg");
 		ImageView p1=new ImageView();
 		p1.setImage(perdiste);
-		p1.setLayoutX(250);
-		p1.setLayoutY(250);
+		p1.setLayoutX(150);
+		p1.setLayoutY(150);
 		
 		Button botonVolver=new Button("<-BACK");
 		botonVolver.setLayoutX(250);
