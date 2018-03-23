@@ -21,6 +21,7 @@ public class Main extends Application {
 		
 			Menu start=new Menu();
 			start.MenuPrincipal(primaryStage);
+			System.out.println("hola");
 		
 	}
 	
