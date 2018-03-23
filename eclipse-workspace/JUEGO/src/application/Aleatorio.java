@@ -17,5 +17,10 @@ public class Aleatorio {
 		Math.round(Y);
 		return Y;
 	}
-
+	
+	public double aparicionAleatoria() {
+		double T = (Math.random()*(-100)+0);
+		Math.round(T);
+		return T;
+	}
 }

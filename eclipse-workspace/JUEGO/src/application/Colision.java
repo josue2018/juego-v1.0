@@ -27,12 +27,12 @@ public class Colision {
 		Image perdiste=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/GAME%20OVER.jpg");
 		ImageView p1=new ImageView();
 		p1.setImage(perdiste);
-		p1.setLayoutX(150);
-		p1.setLayoutY(150);
+		p1.setLayoutX(120);
+		p1.setLayoutY(130);
 		
 		Button botonVolver=new Button("<-BACK");
-		botonVolver.setLayoutX(250);
-		botonVolver.setLayoutY(280);
+		botonVolver.setLayoutX(220);
+		botonVolver.setLayoutY(100);
 		
 		botonVolver.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() 
 		{
