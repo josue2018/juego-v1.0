@@ -47,11 +47,22 @@ public class Menu {
 			@Override
 			public void handle(MouseEvent event) {
 				
-				Juego j1=new Juego();
+				Escenario j1=new Escenario();
 				j1.Escenario(primaryStage);
 				
 			}
 			
+		});
+		botonCreditos.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() 
+		{
+
+			@Override
+			public void handle(MouseEvent arg0) {
+				
+			Creditos c1=new Creditos();
+			c1.Creadores(primaryStage);
+			
+			}
 		});
 		
 		botonSalir.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() 

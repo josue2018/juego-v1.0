@@ -18,8 +18,8 @@ public class Aleatorio {
 		return Y;
 	}
 	
-	public double aparicionAleatoria() {
-		double T = (Math.random()*(-100)+0);
+	public double Tiempo() {
+		double T = (Math.random()*(6000)+3000);
 		Math.round(T);
 		return T;
 	}
