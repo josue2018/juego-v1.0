@@ -21,7 +21,7 @@ public class Menu {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
-		Image Fondo=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/Contraruta.jpg");
+		Image Fondo=new Image("Contraruta.jpg");
 		ImageView mostrarFondo=new ImageView();
 		mostrarFondo.setImage(Fondo);
 		

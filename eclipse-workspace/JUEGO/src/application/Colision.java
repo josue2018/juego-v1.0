@@ -24,7 +24,7 @@ public class Colision {
 		Stage3.show();
 		
 		
-		Image perdiste = new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/GAME%20OVER.jpg");
+		Image perdiste = new Image("GAME OVER.jpg");
 		ImageView p1 = new ImageView();
 		p1.setImage(perdiste);
 		p1.setLayoutX(120);

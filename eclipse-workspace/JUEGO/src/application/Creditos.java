@@ -17,7 +17,7 @@ public class Creditos {
 		BorderPane root = new BorderPane();
 		Scene scene = new Scene(root,500,500);
 		
-		Image fondo = new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/CREADORES.jpg");
+		Image fondo = new Image("CREADORES.jpg");
 		ImageView mostrarFondo = new ImageView();
 		mostrarFondo.setImage(fondo);
 		mostrarFondo.setFitWidth(500);

@@ -41,7 +41,7 @@ public class Escenario {
 		Scene scene=new Scene(root,500,500);
 		aleatorio = new Aleatorio();
 		
-		Image fondo=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/FONDOFINAL.jpg");
+		Image fondo=new Image("FONDOFINAL.jpg");
 		ImageView mostrarFondo=new ImageView();
 		mostrarFondo.setImage(fondo);
 		mostrarFondo.setFitWidth(500);
@@ -50,7 +50,7 @@ public class Escenario {
 		Stage2.setScene(scene); 
 		Stage2.show();
 			
-			Image obstaculo2 = new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/obs1.jpg");
+			Image obstaculo2 = new Image("obs1.jpg");
 			autos1 = new ImageView[5];
 	    	for(int i=0;i<autos1.length;i++) {
 	    		mostrarObstaculo2 = new ImageView();
@@ -70,7 +70,7 @@ public class Escenario {
 
 				}
 		
-		Image obstaculo=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/obs3.jpg");
+		Image obstaculo=new Image("obs3.jpg");
 		autos2 = new ImageView[5];
 		for(int i=0;i<autos2.length;i++) {
 			mostrarObstaculo=new ImageView();
@@ -89,7 +89,7 @@ public class Escenario {
 		root.getChildren().addAll(mostrarObstaculo);
 		}
 		
-		Image persona=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/persona%203.jpg");
+		Image persona=new Image("persona 3.jpg");
 		peatones = new ImageView[2];
 		
 		mostrarPersona=new ImageView();
@@ -111,7 +111,7 @@ public class Escenario {
 		root.getChildren().addAll(mostrarPersona);
 	
 		
-		Image jugador=new Image("file:///C:/Users/usuario/eclipse-workspace/JUEGO/src/application/JUGADOR.jpg");
+		Image jugador=new Image("JUGADOR.jpg");
 		mostrarJugador=new ImageView();
 		mostrarJugador.setImage(jugador);
 		//posicion inicial jugador
